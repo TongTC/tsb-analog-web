@@ -1,0 +1,46 @@
+ul {
+  list-style-type: none;
+  margin-top: 10px;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.dropdown-item:hover {
+   background-color: #E60012;
+
+  width: 100%;
+  /* display: block ; */
+}
+
+.dropdown-item li{
+  width: 100%;
+}
+
+
+.active {
+  background-color: #E60012;}
+li {
+        /* Makes the <li> behave like a block element */
+    /* width: 100%;          Fills the entire width of the parent */ 
+   /* Includes padding and border in the width */
+  /* float: left; */
+}
+
+
+li a {
+  display: block;
+  color: white;
+  text-align: left;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+
+/* li a:hover {
+  background-color: #111;
+} */
+
+.bg-red {
+  background-color: #e60012;
+}
