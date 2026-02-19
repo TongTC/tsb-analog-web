@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
+import { CardholderComponent } from '../../components/cardholder/cardholder.component';
 
 @Component({
-  imports: [],
-  template: `
-    <h1>Semiconductor & Electronics Component</h1>
-  `
+  imports: [CardholderComponent],
+  styleUrl: 'semiconpro.page.css',
+  templateUrl: 'semiconpro.page.html',
 })
 export default class SemiconproPage {}

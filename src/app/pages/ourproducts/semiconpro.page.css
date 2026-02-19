@@ -1,0 +1,38 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+  align-items: start;
+  width: 100%;
+}
+
+
+img{
+    width: 40%;
+    margin:auto;
+}
+
+div.tbh{
+  color: white;
+}
+
+div{
+  word-wrap: break-word;
+}
+
+
+table {
+  /* font-family: arial, sans-serif; */
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td{
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr {
+  background-color: #dddddd;
+}

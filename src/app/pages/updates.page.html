@@ -1,0 +1,7 @@
+<h4>News and Updates</h4>
+<div class="grid">
+    @for(post of posts; track post.title ){
+
+    <app-blogcardholder [post]="{ title: post.title, id: post.id, excerpt: post.excerpt, image: post.image }" />
+    }
+</div>
