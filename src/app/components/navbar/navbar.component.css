@@ -20,12 +20,7 @@ ul {
 
 .active {
   background-color: #E60012;}
-li {
-        /* Makes the <li> behave like a block element */
-    /* width: 100%;          Fills the entire width of the parent */ 
-   /* Includes padding and border in the width */
-  /* float: left; */
-}
+
 
 
 li a {

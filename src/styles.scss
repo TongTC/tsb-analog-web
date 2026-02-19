@@ -1,7 +1,22 @@
 /* p{text-align: left;} */
 /* .row{margin-top: 10px;} */
-// @import 'bootstrap/scss/bootstrap';
+ @import 'bootstrap/scss/bootstrap';
 
+* {
+  box-sizing: border-box;
+  @include font-size(1rem);
+}
+
+.bg-red {
+  background-color: #e60012;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 1rem;
+  
+}
 
 .center {
   display: block;
@@ -20,13 +35,13 @@ h1{
   font-size: 5vw;
  
 }
-// p{
-//   color: white;
-//   font-size: 5vw;
-//   margin: 20px;
+ p{
+   color: white;
+   font-size: 5vw;
+   margin: 20px;
 
  
-// }
+ }
 /* Css for logo */
 img{
   height: auto;
@@ -40,5 +55,11 @@ div.ok{
   font-size:xx-large;
   font-weight: bolder;
 }
-
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+  align-items: start;
+  width: 100%;
+}
 
