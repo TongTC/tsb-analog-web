@@ -1,0 +1,26 @@
+<!-- ...existing code... -->
+<div class="card">
+  <a class="card-media" [routerLink]="['/updates', post.id]">
+    <img class="center frame" [src]="imageSrc" [alt]="altText">
+  </a>
+
+  <div class="card-body">
+    <h2 class="card-title">{{post.title}}</h2>
+    <p class="card-excerpt">
+      {{post.excerpt}}.
+    </p>
+    @if(post.author || post.date) {
+      <div class="card-meta">
+        @if(post.author) {
+          <span class="author">By {{post.author}}</span>
+        }
+        @if(post.date) {
+          <span class="date">{{post.date}}</span>
+        }
+      </div>
+    }
+
+    <a class="read-more" [routerLink]="['/updates', post.id]" role="button">อ่านเพิ่มเติม</a>
+  </div>
+</div>
+<!-- ...existing code... -->
