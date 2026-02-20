@@ -1,8 +1,11 @@
 import { Component } from '@angular/core';
 import { Post } from '../../interface';
-import { CardholderComponent } from '../../components/cardholder/cardholder.component';
+import { CardholderComponent } from '../../components/cardholder.component';
+
+
 
 @Component({
+  selector: 'app-fapart-page',
   imports: [CardholderComponent],
   templateUrl: './fapart.page.html',
   styleUrl: './fapart.page.css'

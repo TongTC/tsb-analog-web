@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { CardholderComponent } from '../../components/cardholder/cardholder.component';
+import { CardholderComponent } from '../../components/cardholder.component';
+
 
 @Component({
   imports: [CardholderComponent],

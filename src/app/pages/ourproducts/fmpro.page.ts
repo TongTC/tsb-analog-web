@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
-import { CardholderComponent } from '../../components/cardholder/cardholder.component';
+
 import { Post } from '../../interface';
+import { CardholderComponent } from '../../components/cardholder.component';
 
 @Component({
+  selector: 'app-fmpro-page',
   imports: [CardholderComponent],
   templateUrl: './fmpro.page.html',
   styleUrl: './fmpro.page.css'

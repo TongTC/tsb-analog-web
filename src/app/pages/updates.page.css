@@ -1,9 +1,5 @@
-import { Component } from '@angular/core';
-
-@Component({
-  imports: [],
-  template: `
-    <h1>Updates</h1>
-  `
-})
-export default class UpdatesPage {}
+h2{
+  color: #e60012;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}

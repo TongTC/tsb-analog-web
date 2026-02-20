@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
 
-import { AnalogWelcome } from './analog-welcome';
-import { NavbarComponent } from '../components/navbar/navbar.component';
-import { RouterOutlet } from '@angular/router';
-import { PlainHolderComponent } from '../components/plain-holder/plain-holder.component';
+
+import { PlainHolderComponent } from '../components/plain-holder.component';
+
 
 @Component({
   selector: 'app-home',

@@ -10,11 +10,11 @@ import { RouterOutlet } from '@angular/router';
 @Component({
   selector: 'app-updated',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [],
   templateUrl: './updates.page.html',
   styleUrl: './updates.page.css'
 })
-export class UpdatedComponent {
+export default class UpdatedComponent {
 
       posts:Post[]=[{      
       title: 'TIMDA Solutions motor control solutions',
