@@ -23,4 +23,10 @@ export default defineConfig(({ mode }) => ({
     include: ['**/*.spec.ts'],
     reporters: ['default'],
   },
+  ssr: {
+    noExternal: ['appllo-angular',
+      'appollo-angular/**',
+      'spartan-ng'
+    ],
+  },
 }));
