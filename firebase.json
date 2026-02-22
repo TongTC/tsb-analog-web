@@ -1,16 +1,18 @@
 {
   "hosting": {
-    "public": "dist/client",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ],
+    "site": "analog-tsb-deploy",
+    "public": "dist/analog/public",
+    "cleanUrls": true,
     "rewrites": [
       {
         "source": "**",
         "function": "server"
       }
+    ],
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
     ]
   },
   "functions": [
@@ -22,8 +24,8 @@
         ".env*",
         "*.local"
       ],
-      "source": "functions",
-      "runtime": "nodejs20"
+      "source": "dist/analog/server",
+      "runtime": "nodejs18"
     },
     {
       "source": "analog_tsb",
