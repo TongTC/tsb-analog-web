@@ -12,6 +12,13 @@
         "build": {
           "builder": "@analogjs/platform:vite",
           "options": {
+            "styles": [
+              "src/styles.scss",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+            ],
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+            ],
             "configFile": "vite.config.ts",
             "main": "src/main.ts",
             "outputPath": "dist/client",

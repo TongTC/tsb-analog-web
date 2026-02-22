@@ -1,0 +1,15 @@
+.bg-red {
+  background-color: #e60012;
+}
+h5{
+  color: white;
+  /* align-items:center; */
+  margin: auto;
+}
+    :host {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 2rem;
+      text-align: center;
+    }
+  
