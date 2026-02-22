@@ -16,7 +16,11 @@ export default defineConfig(({ mode }) => ({
   },
   plugins: [
     angular(),
-    analog(),
+    analog({
+      nitro: {
+        preset: 'firebase',
+      }
+    }),
     tailwindcss()
   ],
   test: {
