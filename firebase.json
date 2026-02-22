@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/client",
+    "public": ".output/public",
     "ignore": [
       "firebase.json",
       "**/.*",
@@ -22,7 +22,7 @@
         ".env*",
         "*.local"
       ],
-      "source": "functions",
+      "source": ".output/server",
       "runtime": "nodejs20"
     },
     {

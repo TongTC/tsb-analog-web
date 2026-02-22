@@ -7,6 +7,7 @@ import angular from '@analogjs/vite-plugin-angular';
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+
   build: {
     target: ['es2020'],
   },
@@ -15,7 +16,11 @@ export default defineConfig(({ mode }) => ({
   },
   plugins: [
     angular(),
-    analog(),
+    analog({
+      nitro: {
+        preset: 'firebase',
+      }
+    }),
     tailwindcss()
   ],
   test: {
