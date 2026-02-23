@@ -8,6 +8,15 @@
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "function": {
+          "functionId": "server",
+          "region": "asia-southeast1"
+        }
+      }
     ]
   }
 }
