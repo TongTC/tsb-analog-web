@@ -19,6 +19,13 @@ export default defineConfig(({ mode }) => ({
     analog({
       nitro: {
         preset: 'firebase',
+        firebase: {
+          gen: 2,
+          nodeVersion: '22',
+          httpsOptions: {
+            region: 'asia-southeast1',
+          },
+        },
       }
     }),
     tailwindcss()

@@ -1,0 +1,17 @@
+steps:
+  # Install dependencies
+  - name: 'gcr.io/cloud-builders/npm'
+    args: ['install', '--production']
+    dir: 'dist/analog/server'
+
+  # Or if package-lock exists, use npm ci
+  - name: 'gcr.io/cloud-builders/npm'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - |
+        if [ -f dist/analog/server/package-lock.json ]; then
+          cd dist/analog/server && npm ci --production
+        else
+          cd dist/analog/server && npm install --production
+        fi

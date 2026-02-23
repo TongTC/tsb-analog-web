@@ -1,0 +1,18 @@
+# Standard ignores
+.git
+.gitignore
+node_modules/
+npm-debug.log
+.DS_Store
+
+# Firebase
+firebase.json
+firebase-debug.log
+.firebaserc
+
+# Source files
+src/
+angular.json
+tsconfig*.json
+vite.config.ts
+vitest.config.ts

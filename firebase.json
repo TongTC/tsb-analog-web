@@ -1,6 +1,8 @@
 {
+  "functions": {
+    "source": "dist/analog/server"
+  },
   "hosting": {
-    "site": "analog-tsb-deploy",
     "public": "dist/analog/public",
     "cleanUrls": true,
     "rewrites": [
@@ -14,34 +16,5 @@
       "**/.*",
       "**/node_modules/**"
     ]
-  },
-  "functions": [
-    {
-      "codebase": "default",
-      "ignore": [
-        "node_modules",
-        ".git",
-        ".env*",
-        "*.local"
-      ],
-      "source": "dist/analog/server",
-      "runtime": "nodejs18"
-    },
-    {
-      "source": "analog_tsb",
-      "codebase": "analog_tsb",
-      "disallowLegacyRuntimeConfig": true,
-      "ignore": [
-        "node_modules",
-        ".git",
-        "firebase-debug.log",
-        "firebase-debug.*.log",
-        "*.local"
-      ],
-      "predeploy": [
-        "npm --prefix \"$RESOURCE_DIR\" run lint",
-        "npm --prefix \"$RESOURCE_DIR\" run build"
-      ]
-    }
-  ]
+  }
 }
