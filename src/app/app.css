@@ -1,6 +1,11 @@
 .bg-red {
   background-color: #e60012;
 }
+h1{
+  color: white;
+  /* align-items:center; */
+  margin: auto;
+}
 h5{
   color: white;
   /* align-items:center; */
