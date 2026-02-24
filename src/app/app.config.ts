@@ -9,9 +9,11 @@ import {
 } from '@angular/core';
 import { provideClientHydration, withEventReplay } from '@angular/platform-browser';
 import { provideFileRouter, requestContextInterceptor } from '@analogjs/router';
+import { provideContent, withMarkdownRenderer } from '@analogjs/content';
 
 export const appConfig: ApplicationConfig = {
   providers: [
+    provideContent(withMarkdownRenderer()),
     provideBrowserGlobalErrorListeners(),
     provideFileRouter(),
     provideHttpClient(
@@ -21,3 +23,5 @@ export const appConfig: ApplicationConfig = {
     provideClientHydration(withEventReplay()),
   ],
 };
+
+

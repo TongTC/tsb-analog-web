@@ -45,3 +45,6 @@ Thumbs.db
 
 # Environment files
 .env*
+
+vite.config.*.timestamp*
+vitest.config.*.timestamp*

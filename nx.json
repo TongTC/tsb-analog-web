@@ -17,6 +17,13 @@
         "default",
         "^production"
       ]
+    },
+    "@nx/vitest:test": {
+      "cache": true,
+      "inputs": [
+        "default",
+        "^production"
+      ]
     }
   },
   "namedInputs": {
@@ -26,8 +33,27 @@
       "sharedGlobals"
     ],
     "production": [
-      "default"
+      "default",
+      "!{projectRoot}/**/?(*.)+(spec|test).[jt]s?(x)?(.snap)",
+      "!{projectRoot}/tsconfig.spec.json",
+      "!{projectRoot}/src/test-setup.[jt]s"
     ]
   },
-  "nxCloudId": "699d212993e1af3e95280381"
+  "nxCloudId": "699d212993e1af3e95280381",
+  "plugins": [
+    {
+      "plugin": "@nx/vite/plugin",
+      "options": {
+        "buildTargetName": "vite:build",
+        "testTargetName": "vite:test",
+        "serveTargetName": "vite:serve",
+        "devTargetName": "vite:dev",
+        "previewTargetName": "vite:preview",
+        "serveStaticTargetName": "serve-static",
+        "typecheckTargetName": "typecheck",
+        "buildDepsTargetName": "build-deps",
+        "watchDepsTargetName": "watch-deps"
+      }
+    }
+  ]
 }

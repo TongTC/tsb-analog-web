@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 
 import { PlainHolderComponent } from '../components/plain-holder.component';
-import UpdatedComponent from './updates.page';
+import UpdatedComponent from './list-updates.page';
 
 
 @Component({

@@ -12,8 +12,8 @@ import { BlogCardholderComponent } from '../components/blogcardholder.component'
   selector: 'app-updated',
   standalone: true,
   imports: [BlogCardholderComponent],
-  templateUrl: './updates.page.html',
-  styleUrl: './updates.page.css'
+  templateUrl: './list-updates.page.html',
+  styleUrl: './list-updates.page.css'
 })
 export default class UpdatedComponent {
 
