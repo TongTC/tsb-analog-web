@@ -1,22 +1,28 @@
 import { Component } from '@angular/core';
-// import { ExamplePdfViewerComponent } from '../example-pdf-viewer/example-pdf-viewer.component';
-// import { MarkdownModule } from 'ngx-markdown';
 import ContentAttributes, { Post } from '../../interface';
-// import { BlogCardholderComponent } from './blogcardholder/blogcardholder.component';
 import { RouterLink, RouterOutlet } from '@angular/router';
 import { injectContentFiles } from '@analogjs/content';
+
+export interface PostAttributes {
+  title: string;
+  slug: string;
+  description: string;
+  coverImage: string;
+}
 
 
 @Component({
   selector: 'app-updated',
   standalone: true,
-  imports: [RouterLink],
+  imports: [RouterLink,RouterOutlet],
   templateUrl: './index.page.html',
   styleUrl: './index.page.css'
 })
 export default class UpdatedComponent {
 
-      readonly contents=injectContentFiles<ContentAttributes>();
+      readonly contents=injectContentFiles<ContentAttributes>((contentFile) => {
+        return contentFile.filename.includes('/src/content');
+      });
         
       // contents: ContentAttributes[] = [
       //     {

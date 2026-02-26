@@ -17,6 +17,9 @@ export default defineConfig(({ mode }) => ({
   plugins: [
     angular(),
     analog({
+      content: {
+        highlighter: 'prism',
+      },
       nitro: {
         preset: 'firebase',
         firebase: {
@@ -27,7 +30,9 @@ export default defineConfig(({ mode }) => ({
           },
         },
       }
-    }),
+    },
+  
+  ),
     tailwindcss()
   ],
   test: {
