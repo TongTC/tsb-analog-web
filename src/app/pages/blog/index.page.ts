@@ -1,21 +1,29 @@
 import { injectContentFiles } from '@analogjs/content';
-import { AsyncPipe } from '@angular/common';
+import { NgFor } from '@angular/common';
 import {Component} from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { BlogCardholderComponent } from 'src/app/components/blogcardholder.component';
+import ContentAttributes from '../../interface';
 
 @Component({
     standalone: true,
-    imports:[RouterLink, AsyncPipe],
+    imports:[NgFor, BlogCardholderComponent],
     template: `
     <h2>Posts</h2>
-    <ul> 
-        <li *ngFor="let post of posts">
-            <a [routerLink]="post.attributes.slug">{{ post.attributes.title }}</a>
-        </li>
-    </ul>
+        <div>
+            <div *ngFor="let post of posts">
+                <app-blogcardholder
+                    [post]="{
+                        title: post.attributes.title,
+                        id: post.attributes.slug,
+                        excerpt: post.attributes.description,
+                        image: post.attributes.coverImage
+                    }"
+                />
+            </div>
+        </div>
     `
 })
 export default class IndexPage{
-    posts = injectContentFiles<Blogpost>();
+    posts = injectContentFiles<ContentAttributes>();
 }
 
