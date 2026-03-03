@@ -1,11 +1,11 @@
 ---
 title: GreenPAK 
 slug: greenpak
-description: The programable logic and function
-coverImage: /mdfiles/greenPAK/cover.png
+description: The broad family of cost-effective non-volatile memory (NVM) configurable hardware devices
+coverImage: /picforcontentfiles/greenpak/cover.png
 ---
 
-This is my first post.
+This is the logic programmable IC 
 
 
-<img src="/mdfiles/greenPAK/cover.png" width="70%" />
+<img src="/picforcontentfiles/greenpak/cover.png" width="70%" />

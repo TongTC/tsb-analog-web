@@ -2,8 +2,48 @@ import { Component } from '@angular/core';
 
 @Component({
   imports: [],
-  templateUrl: './contactus.page.html',
-  styleUrls: ['./contactus.page.css'],
+  template: ` <div class="container border m-1">
+    <div class="row border m-1">
+      <div class="col">
+        <div class="bg-red text-light rounded">
+          <h4>Semiconductor Department</h4>
+        </div>
 
+        <h5>Sales Person (Thai)</h5>
+        <p>Mr.Nataphong Thipkham (Sales Engineer)</p>
+        <div class="bg-red text-light rounded">
+          <h4>Factory Automation Department</h4>
+        </div>
+        <h5>Sales Person (Japanese)</h5>
+        <p>Mr.Jumpei Kanata</p>
+        <div class="bg-red text-light rounded">
+          <h4>Industrial Mechatronics</h4>
+        </div>
+        <h5>Sales Person (Japanese)</h5>
+        <p>Mr.Sueahisa san</p>
+
+        <div class="bg-secondary rounded text-light">
+          <h4>Location</h4>
+        </div>
+
+        <p>
+          Thaniya Building 8th Fl.,Room No.803-804, Silom Road Suriyawong
+          Bangrak, Bangkok 10500
+        </p>
+      </div>
+      <div class="col-4">
+        <div class="bg-secondary rounded text-light">
+          <h4>Thaniya Building</h4>
+        </div>
+
+        <div>
+          <img src="/thaniya_bd.jpg" alt="Thaniya Building" width="100%" />
+        </div>
+
+        <img src="/map.png" width="100%" />
+      </div>
+    </div>
+  </div>`,
+  styleUrls: ['./contactus.page.css'],
 })
 export default class ContactUsPage {}

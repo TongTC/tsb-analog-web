@@ -2,17 +2,41 @@ import { Component } from '@angular/core';
 import { Post } from '../../interface';
 import { CardholderComponent } from '../../components/cardholder.component';
 
-
-
 @Component({
   selector: 'app-fapart-page',
   imports: [CardholderComponent],
-  templateUrl: './fapart.page.html',
-  styleUrl: './fapart.page.css'
- 
+  template: `
+    <div class="container p-2">
+      @for (maker of makers; track maker.id) {
+        <div class="row row-cols-3 m-1">
+          <div class="col border"><img src="{{ maker.photo_link }}" /></div>
+          <div class="col border">{{ maker.name }}</div>
+          <div class="col border">{{ maker.des }}</div>
+        </div>
+      }
+      <div class="container">
+        <div class="border bg-red rounded">
+          <h4>FA Part Products</h4>
+        </div>
+      </div>
+      <div class="grid ">
+        @for (post of posts; track post.title) {
+          <app-cardholder
+            [post]="{
+              title: post.title,
+              excerpt: post.excerpt,
+              image: post.image,
+            }"
+          />
+        }
+      </div>
+    </div>
+  `,
+  styleUrl: './fapart.page.css',
 })
 export default class FapartPage {
- makers = [
+  
+  makers = [
     {
       id: 1,
       name: 'Mitsubishi Electric (Factory Automation Parts)',
@@ -33,14 +57,13 @@ export default class FapartPage {
     {
       title: 'PLC',
       excerpt: 'Programmable Logic Controller',
-      image: '/fap/plc1.jpg',
+      image: '/fap/plc1.png',
       author: 'TSB',
       date: 'Nov 3, 2025',
       link: '#',
     },
     {
-      title:
-        'Module Processing',
+      title: 'Module Processing',
       excerpt: 'One module realizes processing',
       image: '/fap/mel_pc.jpg',
       author: 'TSB',
@@ -48,24 +71,12 @@ export default class FapartPage {
       link: '#',
     },
     {
-      title:
-        'High-resolution LCD monitor',
+      title: 'High-resolution LCD monitor',
       excerpt: 'High-resolution LCD',
       image: '/fap/lcd_monitor.jpg',
       author: 'TSB',
       date: 'Nov 3, 2025',
       link: '#',
-    },
-     {
-      title:
-        'Hi-Resolution LCD Monitor',
-      excerpt: 'High-resolution LCD',
-      image: '/fap/lcd_monitor.jpg',
-      author: 'TSB',
-      date: 'Nov 3, 2025',
-      link: '#',
-    },
-
+    }
   ];
-
 }

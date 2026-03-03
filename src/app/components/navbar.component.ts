@@ -5,7 +5,109 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
   selector: 'app-navbar',
   standalone: true,
   imports: [RouterLink, RouterLinkActive],
-  templateUrl: './navbar.component.html',
+  template: `
+  <!-- <div class="container-fluid"> -->
+  <!-- <div class="row"> -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="rounded bg-red container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <li
+              [routerLinkActive]="'active'"
+              [routerLinkActiveOptions]="{ exact: true }"
+            >
+              <a routerLink="">HOME</a>
+            </li>
+            
+
+            <li class="nav-item dropdown" [routerLinkActive]="'active'">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >OUR PRODUCTS</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    
+                    routerLink="/ourproducts/semiconpro"
+                    >Semiconductor & Electronics Component</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    routerLink="/ourproducts/fapart"
+                    >Factory Automation</a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    
+                    routerLink="/ourproducts/fmpro"
+                    >Industrial Automation Machine</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown" [routerLinkActive]="'active'">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >CORPORATE INFOMATION</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    
+                    routerLink="/profile/hqprofile"
+                    >Head Office</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    
+                    routerLink="/profile/bkkprofile"
+                    >Bangkok Office</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li><a routerLink="/updates">NEWS & UPDATES</a></li>
+           
+            <li [routerLinkActive]="'active'">
+              <a routerLink="/contactus">CONTACT US</a>
+            </li>
+
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+  <!-- </div> -->
+<!-- </div> -->
+`,
   styleUrl: './navbar.component.css',
 })
 export class NavbarComponent {}

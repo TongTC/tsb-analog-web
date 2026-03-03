@@ -10,7 +10,7 @@ import ContentAttributes, { Post } from '../../interface';
   
   <div *ngIf="post$ | async as post">
   <h2>{{ post.attributes.title }}</h2>
-  <analog-markdown [content]="post.content" />
+  <analog-markdown [content]="post.content" class="markdown-content" />
 </div>`,
   styleUrl: './[slug].page.css' 
 })
