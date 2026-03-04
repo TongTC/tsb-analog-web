@@ -7,7 +7,7 @@ import { ProductholderComponent } from '../../components/productholder.component
   imports: [ProductholderComponent],
   template: `
     <div class="container p-2">
-      @for (maker of makers; track maker.id) {
+      @for (maker of makers; track maker.name) {
         <div class="row row-cols-3 m-1">
           <div class="col border"><img src="{{ maker.photo_link }}" /></div>
           <div class="col border">{{ maker.name }}</div>
