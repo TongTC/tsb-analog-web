@@ -1,10 +1,8 @@
 import { Component } from '@angular/core';
 
-
 @Component({
   imports: [],
   styleUrl: 'index.page.css',
-  template: `<h1>ABC</h1>
-`,
+  templateUrl: 'renesas.page.html',
 })
 export default class RenesasPage {}

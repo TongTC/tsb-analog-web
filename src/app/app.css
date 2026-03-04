@@ -1,20 +1,19 @@
 .bg-red {
   background-color: #e60012;
 }
-h1{
+h1 {
   color: white;
   /* align-items:center; */
   margin: auto;
 }
-h5{
+h5 {
   color: white;
   /* align-items:center; */
   margin: auto;
 }
-    :host {
-      max-width: 1280px;
-      margin: 0 auto;
-      padding: 2rem;
-      text-align: center;
-    }
-  
+:host {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
