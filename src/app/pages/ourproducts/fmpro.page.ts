@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
-import { Post } from '../../interface';
-import { CardholderComponent } from '../../components/cardholder.component';
+import { Product } from '../../interface';
+import * as productholderComponent from '../../components/productholder.component';
 
 @Component({
   selector: 'app-fmpro-page',
-  imports: [CardholderComponent],
+  imports: [productholderComponent.ProductholderComponent],
   template:`
   <div class="container p-2">
   @for(maker of makers; track maker.id){
@@ -21,9 +21,12 @@ import { CardholderComponent } from '../../components/cardholder.component';
   <div class="grid ">
  
 
-    @for(post of posts; track post.title ){
+    @for(product of products; track product.name ){
 
-    <app-cardholder [post]="{ title: post.title,excerpt:post.excerpt , image: post.image }" />
+    <app-productholder [product]="{ 
+      name: product.name, 
+      description: product.description,
+      image: product.image }" />
     }
   </div>
 </div>
@@ -33,22 +36,19 @@ import { CardholderComponent } from '../../components/cardholder.component';
   
 })
 export default class FmproPage {
-   posts: Post[] = [{
-    title: 'Wire-cut EDM',
-    excerpt: 'Induction Motor aluminium frame',
+   products: Product[] = [{
+    name: 'Wire-cut EDM',
+    description: 'Wire-cut EDM',
     image: '/fm/wire_cut_edm.png',
-    author: 'TSB',
-    date: 'Nov 3, 2025',
-    link: '#'
   },
   {
-    title: 'Laser Processing Machine-Fiber',
-    excerpt: 'Laser Processing Machine-Fiber',
+    name: 'Laser Processing Machine-Fiber',
+    description: 'Laser Processing Machine-Fiber',
     image: '/fm/Laser.jpg',
   },
   {
-    title: 'Micro Laser Drilling Machine.',
-    excerpt: 'Micro Laser Drilling Machine.',
+    name: 'Micro Laser Drilling Machine.',
+    description: 'Micro Laser Drilling Machine.',
     image: '/fm/laser_drilling_machine.png',
   }
 

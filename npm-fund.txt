@@ -1,0 +1,60 @@
+analog-app@0.0.0
+โ”โ”€โ”€ https://github.com/sponsors/brandonroberts
+โ”   โ””โ”€โ”€ @analogjs/content@2.2.3, @analogjs/router@2.2.3, @analogjs/platform@2.2.3, @analogjs/vite-plugin-nitro@2.2.3, @analogjs/vite-plugin-angular@2.2.3, @analogjs/vitest-angular@2.2.3
+โ”โ”€โ”ฌ https://opencollective.com/postcss/
+โ” โ” โ””โ”€โ”€ postcss@8.5.6, autoprefixer@10.4.24
+โ” โ””โ”€โ”€ https://github.com/sponsors/ai
+โ”     โ””โ”€โ”€ nanoid@3.3.11
+โ”โ”€โ”€ https://opencollective.com/vitest
+โ”   โ””โ”€โ”€ @vitest/ui@4.0.18, @vitest/utils@4.0.18, @vitest/pretty-format@4.0.18, vitest@4.0.18, @vitest/expect@4.0.18, @vitest/mocker@4.0.18, @vitest/runner@4.0.18, @vitest/snapshot@4.0.18, @vitest/spy@4.0.18
+โ”โ”€โ”ฌ https://github.com/vitejs/vite?sponsor=1
+โ” โ” โ””โ”€โ”€ vite@7.3.0
+โ” โ””โ”€โ”€ https://github.com/sponsors/eemeli
+โ”     โ””โ”€โ”€ yaml@2.8.2
+โ”โ”€โ”€ https://opencollective.com/webpack
+โ”   โ””โ”€โ”€ tapable@2.3.0, webpack@5.105.2, loader-runner@4.3.1, terser-webpack-plugin@5.3.16, schema-utils@3.3.0, css-loader@6.11.0, less-loader@11.1.4, postcss-loader@6.2.1, sass-loader@16.0.7, source-map-loader@5.0.0, style-loader@3.3.4, webpack-dev-middleware@7.4.5, copy-webpack-plugin@10.2.4, css-minimizer-webpack-plugin@5.0.1, mini-css-extract-plugin@2.4.7, webpack-dev-server@5.2.3
+โ”โ”€โ”€ https://github.com/sponsors/panva
+โ”   โ””โ”€โ”€ jose@4.15.9
+โ”โ”€โ”€ https://opencollective.com/js-sdsl
+โ”   โ””โ”€โ”€ @js-sdsl/ordered-map@4.4.2
+โ”โ”€โ”€ https://github.com/sponsors/NaturalIntelligence
+โ”   โ””โ”€โ”€ fast-xml-parser@5.3.7, strnum@2.1.2
+โ”โ”€โ”€ https://github.com/sponsors/mdevils
+โ”   โ””โ”€โ”€ html-entities@2.6.0
+โ”โ”€โ”€ https://opencollective.com/babel
+โ”   โ””โ”€โ”€ @babel/core@7.28.5
+โ”โ”€โ”€ https://opencollective.com/browserslist
+โ”   โ””โ”€โ”€ browserslist@4.28.1, caniuse-lite@1.0.30001772, update-browserslist-db@1.2.3
+โ”โ”€โ”ฌ https://github.com/inikulin/parse5?sponsor=1
+โ” โ” โ””โ”€โ”€ parse5-html-rewriting-stream@8.0.0, parse5@8.0.0, parse5-sax-parser@8.0.0, parse5@7.3.0
+โ” โ””โ”€โ”€ https://github.com/fb55/entities?sponsor=1
+โ”     โ””โ”€โ”€ entities@6.0.1, entities@4.5.0, entities@7.0.1
+โ”โ”€โ”€ https://github.com/sponsors/mesqueeb
+โ”   โ””โ”€โ”€ copy-anything@2.0.6
+โ”โ”€โ”ฌ https://github.com/sponsors/fb55
+โ” โ” โ””โ”€โ”€ css-select@6.0.0, domelementtype@2.3.0, css-what@7.0.0, css-select@5.2.2, css-what@6.2.2
+โ” โ”โ”€โ”€ https://github.com/fb55/domutils?sponsor=1
+โ” โ”   โ””โ”€โ”€ domutils@3.2.2
+โ” โ””โ”€โ”€ https://github.com/fb55/nth-check?sponsor=1
+โ”     โ””โ”€โ”€ nth-check@2.1.1
+โ”โ”€โ”€ https://github.com/cheeriojs/dom-serializer?sponsor=1
+โ”   โ””โ”€โ”€ dom-serializer@2.0.0
+โ”โ”€โ”€ https://github.com/fb55/domhandler?sponsor=1
+โ”   โ””โ”€โ”€ domhandler@5.0.3
+โ”โ”€โ”€ https://github.com/fb55/htmlparser2?sponsor=1
+โ”   โ””โ”€โ”€ htmlparser2@10.1.0
+โ”โ”€โ”€ https://github.com/sponsors/Brooooooklyn
+โ”   โ””โ”€โ”€ @napi-rs/nice@1.1.1
+โ”โ”€โ”€ https://github.com/sponsors/lupomontero
+โ”   โ””โ”€โ”€ psl@1.15.0
+โ”โ”€โ”€ https://opencollective.com/typescript-eslint
+โ”   โ””โ”€โ”€ @typescript-eslint/type-utils@8.56.1, @typescript-eslint/types@8.56.1, @typescript-eslint/typescript-estree@8.56.1, @typescript-eslint/project-service@8.56.1, @typescript-eslint/tsconfig-utils@8.56.1, @typescript-eslint/visitor-keys@8.56.1, @typescript-eslint/utils@8.56.1, @typescript-eslint/scope-manager@8.56.1
+โ”โ”€โ”€ https://github.com/sponsors/RubenVerborgh
+โ”   โ””โ”€โ”€ follow-redirects@1.15.11
+โ”โ”€โ”ฌ https://eslint.org/donate
+โ” โ” โ””โ”€โ”€ eslint@9.39.3, @eslint/js@9.39.3
+โ” โ””โ”€โ”€ https://github.com/sponsors/nzakas
+โ”     โ””โ”€โ”€ @humanwhocodes/module-importer@1.0.1, @humanwhocodes/retry@0.4.3
+โ””โ”€โ”€ https://opencollective.com/core-js
+    โ””โ”€โ”€ core-js-compat@3.48.0
+

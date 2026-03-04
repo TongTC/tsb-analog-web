@@ -10,8 +10,8 @@ import { BlogCardholderComponent } from "../../components/blogcardholder.compone
   imports: [ BlogCardholderComponent],
   template: `
   <div class="mt-3">
-  <h4>News and Updates</h4>
-  <p>Stay up to date with the latest news and updates from our team. We share insights, project updates, and industry trends to keep you informed about our work and the world of technology.</p>
+  <h3><b>News and Updates</b></h3>
+  <p style="text-align:left">Stay up to date with the latest news and updates from our team. We share insights, project updates, and industry trends to keep you informed about our work and the world of technology.</p>
   <div class="grid">
     @for(post of posts; track post){
       <ul>

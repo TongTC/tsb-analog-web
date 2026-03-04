@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { Post } from '../../interface';
-import { CardholderComponent } from '../../components/cardholder.component';
+import { Post, Product } from '../../interface';
+import { ProductholderComponent } from '../../components/productholder.component';
 
 @Component({
   selector: 'app-fapart-page',
-  imports: [CardholderComponent],
+  imports: [ProductholderComponent],
   template: `
     <div class="container p-2">
       @for (maker of makers; track maker.id) {
@@ -20,12 +20,13 @@ import { CardholderComponent } from '../../components/cardholder.component';
         </div>
       </div>
       <div class="grid ">
-        @for (post of posts; track post.title) {
-          <app-cardholder
-            [post]="{
-              title: post.title,
-              excerpt: post.excerpt,
-              image: post.image,
+        @for (product of products; track product.name) {
+          <app-productholder
+            [product]="{
+              name: product.name,
+              description: product.description,
+              image: product.image,
+              link: product.link
             }"
           />
         }
@@ -45,37 +46,29 @@ export default class FapartPage {
     },
   ];
 
-  posts: Post[] = [
+  products: Product[] = [
     {
-      title: 'Induction Motor',
-      excerpt: 'Induction Motor aluminium frame',
+      name: 'Induction Motor',
+      description: 'Induction Motor aluminium frame',
       image: '/fap/motor_induc.png',
-      author: 'TSB',
-      date: 'Nov 3, 2025',
       link: '#',
     },
     {
-      title: 'PLC',
-      excerpt: 'Programmable Logic Controller',
+      name: 'PLC',
+      description: 'Programmable Logic Controller',
       image: '/fap/plc1.png',
-      author: 'TSB',
-      date: 'Nov 3, 2025',
       link: '#',
     },
     {
-      title: 'Module Processing',
-      excerpt: 'One module realizes processing',
+      name: 'Module Processing',
+      description: 'One module realizes processing',
       image: '/fap/mel_pc.jpg',
-      author: 'TSB',
-      date: 'Nov 3, 2025',
       link: '#',
     },
     {
-      title: 'High-resolution LCD monitor',
-      excerpt: 'High-resolution LCD',
+      name: 'High-resolution LCD monitor',
+      description: 'High-resolution LCD',
       image: '/fap/lcd_monitor.jpg',
-      author: 'TSB',
-      date: 'Nov 3, 2025',
       link: '#',
     }
   ];

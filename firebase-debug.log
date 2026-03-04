@@ -151,3 +151,156 @@
     at Delegate.discoverBuild (C:\Users\natap\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:192:41)
 [error] 
 [error] Error: An unexpected error has occurred.
+[debug] [2026-03-04T04:23:33.487Z] ----------------------------------------------------------------------
+[debug] [2026-03-04T04:23:33.490Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Lenovo\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2026-03-04T04:23:33.490Z] CLI Version:   15.7.0
+[debug] [2026-03-04T04:23:33.491Z] Platform:      win32
+[debug] [2026-03-04T04:23:33.491Z] Node Version:  v22.22.0
+[debug] [2026-03-04T04:23:33.491Z] Time:          Wed Mar 04 2026 11:23:33 GMT+0700 (เวลาอินโดจีน)
+[debug] [2026-03-04T04:23:33.491Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-03-04T04:23:33.494Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2026-03-04T04:23:37.098Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-03-04T04:23:37.099Z] > authorizing via signed-in user (nataphong.tt@gmail.com)
+[debug] [2026-03-04T04:23:37.099Z] [iam] checking project analog-tsb-deploy for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-03-04T04:23:37.100Z] Checked if tokens are valid: false, expires at: 1771845236033
+[debug] [2026-03-04T04:23:37.100Z] Checked if tokens are valid: false, expires at: 1771845236033
+[debug] [2026-03-04T04:23:37.100Z] > refreshing access token with scopes: []
+[debug] [2026-03-04T04:23:37.101Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2026-03-04T04:23:37.101Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-03-04T04:23:37.248Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2026-03-04T04:23:37.248Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-03-04T04:23:37.257Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/analog-tsb-deploy:testIamPermissions [none]
+[debug] [2026-03-04T04:23:37.257Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/analog-tsb-deploy:testIamPermissions  x-goog-user-project=analog-tsb-deploy
+[debug] [2026-03-04T04:23:37.257Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/analog-tsb-deploy:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-03-04T04:23:37.580Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2026-03-04T04:23:37.580Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2026-03-04T04:23:38.502Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/analog-tsb-deploy:testIamPermissions 200
+[debug] [2026-03-04T04:23:38.503Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/analog-tsb-deploy:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-03-04T04:23:38.503Z] Checked if tokens are valid: true, expires at: 1772601816248
+[debug] [2026-03-04T04:23:38.503Z] Checked if tokens are valid: true, expires at: 1772601816248
+[debug] [2026-03-04T04:23:38.503Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/analog-tsb-deploy/serviceAccounts/analog-tsb-deploy@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2026-03-04T04:23:38.503Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/analog-tsb-deploy/serviceAccounts/analog-tsb-deploy@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2026-03-04T04:23:39.992Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/analog-tsb-deploy/serviceAccounts/analog-tsb-deploy@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2026-03-04T04:23:39.993Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/analog-tsb-deploy/serviceAccounts/analog-tsb-deploy@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2026-03-04T04:23:39.993Z] Checked if tokens are valid: true, expires at: 1772601816248
+[debug] [2026-03-04T04:23:39.993Z] Checked if tokens are valid: true, expires at: 1772601816248
+[debug] [2026-03-04T04:23:39.993Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/analog-tsb-deploy [none]
+[debug] [2026-03-04T04:23:40.618Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/analog-tsb-deploy 200
+[debug] [2026-03-04T04:23:40.618Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/analog-tsb-deploy {"projectId":"analog-tsb-deploy","projectNumber":"531828663096","displayName":"analog-tsb-deploy","name":"projects/analog-tsb-deploy","resources":{"hostingSite":"analog-tsb-deploy"},"state":"ACTIVE","etag":"1_c84c6aa4-961f-4b3b-932b-27e7b9dc572d"}
+[info] 
+[info] === Deploying to 'analog-tsb-deploy'...
+[info] 
+[info] i  deploying functions, hosting 
+[debug] [2026-03-04T04:23:40.623Z] Checked if tokens are valid: true, expires at: 1772601816248
+[debug] [2026-03-04T04:23:40.623Z] Checked if tokens are valid: true, expires at: 1772601816248
+[debug] [2026-03-04T04:23:40.624Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/analog-tsb-deploy [none]
+[debug] [2026-03-04T04:23:40.911Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/analog-tsb-deploy 200
+[debug] [2026-03-04T04:23:40.911Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/analog-tsb-deploy {"projectNumber":"531828663096","projectId":"analog-tsb-deploy","lifecycleState":"ACTIVE","name":"analog-tsb-deploy","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2026-02-20T05:46:22.496665Z"}
+[info] i  functions: preparing codebase default for deployment 
+[info] i  functions: ensuring required API cloudfunctions.googleapis.com is enabled... 
+[info] i  functions: ensuring required API cloudbuild.googleapis.com is enabled... 
+[info] i  artifactregistry: ensuring required API artifactregistry.googleapis.com is enabled... 
+[debug] [2026-03-04T04:23:40.914Z] Checked if tokens are valid: true, expires at: 1772601816248
+[debug] [2026-03-04T04:23:40.915Z] Checked if tokens are valid: true, expires at: 1772601816248
+[debug] [2026-03-04T04:23:40.915Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/analog-tsb-deploy/adminSdkConfig [none]
+[debug] [2026-03-04T04:23:41.446Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/analog-tsb-deploy/adminSdkConfig 200
+[debug] [2026-03-04T04:23:41.446Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/analog-tsb-deploy/adminSdkConfig {"projectId":"analog-tsb-deploy","storageBucket":"analog-tsb-deploy.firebasestorage.app"}
+[debug] [2026-03-04T04:23:41.447Z] Checked if tokens are valid: true, expires at: 1772601816248
+[debug] [2026-03-04T04:23:41.447Z] Checked if tokens are valid: true, expires at: 1772601816248
+[debug] [2026-03-04T04:23:41.447Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/analog-tsb-deploy/configs [none]
+[debug] [2026-03-04T04:23:42.013Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/analog-tsb-deploy/configs 200
+[debug] [2026-03-04T04:23:42.014Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/analog-tsb-deploy/configs {}
+[debug] [2026-03-04T04:23:42.016Z] Validating nodejs source
+[warn] !  functions: Couldn't find firebase-functions package in your source code. Have you run 'npm install'? 
+[debug] [2026-03-04T04:23:42.018Z] getFunctionsSDKVersion encountered error: Cannot find module 'E:\code\tsb_analog_web\tsb-analog-web\dist\analog\server\node_modules\firebase-functions\lib\v2\index.js' {"code":"MODULE_NOT_FOUND","path":"E:\\code\\tsb_analog_web\\tsb-analog-web\\dist\\analog\\server\\node_modules\\firebase-functions"}
+[debug] [2026-03-04T04:23:42.032Z] checkFunctionsSDKVersion encountered error: Invalid Version:  {}
+[debug] [2026-03-04T04:23:42.033Z] > [functions] package.json contents: {
+  "name": "analog-app-prod",
+  "version": "0.0.0",
+  "type": "module",
+  "private": true,
+  "dependencies": {
+    "agent-base": "7.1.4",
+    "base64-js": "1.5.1",
+    "bignumber.js": "9.3.1",
+    "buffer-equal-constant-time": "1.0.1",
+    "cors": "2.8.6",
+    "debug": "4.4.3",
+    "ecdsa-sig-formatter": "1.0.11",
+    "encoding": "0.1.13",
+    "esprima": "4.0.1",
+    "extend": "3.0.2",
+    "fast-deep-equal": "3.1.3",
+    "@fastify/busboy": "3.2.0",
+    "firebase-admin": "13.6.1",
+    "firebase-functions": "7.0.5",
+    "front-matter": "4.0.2",
+    "gaxios": "6.7.1",
+    "gcp-metadata": "6.1.1",
+    "github-slugger": "2.0.0",
+    "google-auth-library": "9.15.1",
+    "google-logging-utils": "0.0.2",
+    "gtoken": "7.1.0",
+    "https-proxy-agent": "7.0.6",
+    "iconv-lite": "0.6.3",
+    "is-stream": "2.0.1",
+    "jose": "4.15.9",
+    "json-bigint": "1.0.0",
+    "jsonwebtoken": "9.0.3",
+    "js-yaml": "3.14.2",
+    "jwa": "2.0.1",
+    "jwks-rsa": "3.2.2",
+    "jws": "4.0.1",
+    "limiter": "1.1.5",
+    "lodash.clonedeep": "4.5.0",
+    "lodash.includes": "4.3.0",
+    "lodash.isboolean": "3.0.3",
+    "lodash.isinteger": "4.0.4",
+    "lodash.isnumber": "3.0.3",
+    "lodash.isplainobject": "4.0.6",
+    "lodash.isstring": "4.0.1",
+    "lodash.once": "4.1.1",
+    "lru-cache": "6.0.0",
+    "lru-memoizer": "2.3.0",
+    "marked": "15.0.12",
+    "marked-gfm-heading-id": "4.1.3",
+    "marked-mangle": "1.1.12",
+    "ms": "2.1.3",
+    "node-fetch": "2.7.0",
+    "node-forge": "1.3.3",
+    "object-assign": "4.1.1",
+    "rxjs": "7.8.2",
+    "safe-buffer": "5.2.1",
+    "safer-buffer": "2.1.2",
+    "semver": "7.7.3",
+    "supports-color": "10.2.2",
+    "tr46": "0.0.3",
+    "uuid": "9.0.1",
+    "vary": "1.1.2",
+    "webidl-conversions": "3.0.1",
+    "whatwg-url": "5.0.0",
+    "yallist": "4.0.0"
+  },
+  "main": "index.mjs",
+  "engines": {
+    "node": "22"
+  }
+}
+[debug] [2026-03-04T04:23:42.034Z] Building nodejs source
+[info] i  functions: Loading and analyzing source code for codebase default to determine what to deploy 
+[debug] [2026-03-04T04:23:42.035Z] Could not parse firebase-functions version '' into semver.
+[debug] [2026-03-04T04:23:42.036Z] Could not find functions.yaml. Must use http discovery
+[debug] [2026-03-04T04:23:42.155Z] Error: Cannot find module 'E:\code\tsb_analog_web\tsb-analog-web\dist\analog\server\node_modules\firebase-functions\lib\v2\index.js'
+    at createEsmNotFoundErr (node:internal/modules/cjs/loader:1419:15)
+    at finalizeEsmResolution (node:internal/modules/cjs/loader:1408:15)
+    at resolveExports (node:internal/modules/cjs/loader:650:14)
+    at Function._findPath (node:internal/modules/cjs/loader:717:31)
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1369:27)
+    at Function.resolve (node:internal/modules/helpers:157:19)
+    at Delegate.findFunctionsBinary (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:101:33)
+    at Delegate.spawnFunctionsProcess (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:131:30)
+    at Delegate.serveAdmin (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:152:35)
+    at Delegate.discoverBuild (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:192:41)
+[error] 
+[error] Error: An unexpected error has occurred.

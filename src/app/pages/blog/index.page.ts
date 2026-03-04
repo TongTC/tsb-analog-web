@@ -1,7 +1,7 @@
 import { injectContentFiles } from '@analogjs/content';
 import { NgFor } from '@angular/common';
 import {Component} from '@angular/core';
-import { BlogCardholderComponent } from 'src/app/components/blogcardholder.component';
+import { BlogCardholderComponent } from '../../components/blogcardholder.component';
 import ContentAttributes from '../../interface';
 
 @Component({
@@ -14,9 +14,9 @@ import ContentAttributes from '../../interface';
                 <app-blogcardholder
                     [post]="{
                         title: post.attributes.title,
-                        id: post.attributes.slug,
-                        excerpt: post.attributes.description,
-                        image: post.attributes.coverImage
+                        slug: post.attributes.slug,
+                        description: post.attributes.description,
+                        coverImage: post.attributes.coverImage
                     }"
                 />
             </div>

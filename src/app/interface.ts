@@ -5,8 +5,24 @@ export interface Post {
   image?: string;
   author?: string;
   date?: string;
-  link?: string;  
+  link?: string;
+
 }
+
+export interface Product{
+  name: string;
+  description: string;
+  image: string;
+  link?: string;
+}
+
+export interface Maker {
+  name: string;
+  logo: string;
+  description: string;
+  routerlink?: string;
+}
+
 
 export default interface ContentAttributes {
   title: string;
