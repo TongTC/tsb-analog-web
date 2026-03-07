@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-
-
 import { PlainHolderComponent } from '../components/plain-holder.component';
 import UpdatedComponent from './updates/index.page';
 
