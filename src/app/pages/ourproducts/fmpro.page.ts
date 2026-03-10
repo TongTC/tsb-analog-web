@@ -16,7 +16,7 @@ import * as productholderComponent from '../../components/productholder.componen
   </div>
   }
   <div class="container">
-    <div class="border bg-red rounded"><h4>FA Part Products</h4></div>
+    <div class="border bg-red rounded"><h4>Industrial Machinery Products</h4></div>
   </div>
   <div class="grid ">
  
