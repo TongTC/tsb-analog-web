@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { PlainHolderComponent } from '../components/plain-holder.component';
 import UpdatedComponent from './updates/index.page';
+import { Promote } from "../components/promoted.component";
 
 
 @Component({
   selector: 'app-home',
-  imports: [PlainHolderComponent, UpdatedComponent],
+  imports: [PlainHolderComponent, UpdatedComponent, Promote],
   styleUrl: './index.page.css',
   template: ` <div class="container-fluid p-1 m-1">
   <div class="col-12 border rounded">
@@ -29,7 +30,7 @@ import UpdatedComponent from './updates/index.page';
 </div>
 
 <div>
-  <app-updated/>
+  <app-promote/>
 </div>
 `,
 })

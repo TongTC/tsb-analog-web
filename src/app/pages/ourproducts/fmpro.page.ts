@@ -26,7 +26,8 @@ import * as productholderComponent from '../../components/productholder.componen
     <app-productholder [product]="{ 
       name: product.name, 
       description: product.description,
-      image: product.image }" />
+      image: product.image,
+      link: product.link }" />
     }
   </div>
 </div>
@@ -40,16 +41,19 @@ export default class FmproPage {
     name: 'Wire-cut EDM',
     description: 'Wire-cut EDM',
     image: '/fm/wire_cut_edm.png',
+    link: '/ourproducts/details/wire-cut-edm',
   },
   {
     name: 'Laser Processing Machine-Fiber',
     description: 'Laser Processing Machine-Fiber',
     image: '/fm/Laser.jpg',
+    link: '/ourproducts/details/laser-processing-machine-fiber',
   },
   {
     name: 'Micro Laser Drilling Machine.',
     description: 'Micro Laser Drilling Machine.',
     image: '/fm/laser_drilling_machine.png',
+    link: '/ourproducts/details/micro-laser-drilling-machine',
   }
 
   ];

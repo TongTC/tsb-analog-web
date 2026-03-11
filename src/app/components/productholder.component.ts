@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
-import { ActivatedRoute, RouterLink } from '@angular/router';
-import { Maker, Product} from 'src/app/interface';
+import { RouterLink } from '@angular/router';
+import { Product } from 'src/app/interface';
 
 @Component({
   selector: 'app-productholder',
@@ -24,13 +24,6 @@ import { Maker, Product} from 'src/app/interface';
   styleUrl: './productholder.component.css',
 })
 export class ProductholderComponent {
-  BlogId: string = '';
-  constructor(private route: ActivatedRoute) {}
-
-  ngOnInit() {
-    this.BlogId = this.route.snapshot.paramMap.get('Id') || '';
-  }
-
   @Input() product: Product = { name: '',
                                 description: '',
                                 image: '',

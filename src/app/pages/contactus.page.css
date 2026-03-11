@@ -6,3 +6,16 @@ h4{
 .bg-red {
   background-color: #e60012;
 }
+
+.contact-wrapper {
+  margin-bottom: 1rem;
+}
+
+.support-card {
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+}
+
+.form-label {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}

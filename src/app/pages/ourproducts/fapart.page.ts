@@ -51,25 +51,25 @@ export default class FapartPage {
       name: 'Induction Motor',
       description: 'Induction Motor aluminium frame',
       image: '/fap/motor_induc.png',
-      link: '#',
+      link: '/ourproducts/details/induction-motor',
     },
     {
       name: 'PLC',
       description: 'Programmable Logic Controller',
       image: '/fap/plc1.png',
-      link: '#',
+      link: '/ourproducts/details/plc',
     },
     {
       name: 'Module Processing',
       description: 'One module realizes processing',
       image: '/fap/mel_pc.jpg',
-      link: '#',
+      link: '/ourproducts/details/module-processing',
     },
     {
       name: 'High-resolution LCD monitor',
       description: 'High-resolution LCD',
       image: '/fap/lcd_monitor.jpg',
-      link: '#',
+      link: '/ourproducts/details/high-resolution-lcd-monitor',
     }
   ];
 }
