@@ -1,6 +1,6 @@
 ---
 title: Renesas RA Family MCU 
-slug: gan
+slug: ra-mcu
 description: The Renesas RA (Renesas Advanced) Family is a modern line of 32-bit microcontrollers (MCUs) built on ARM®
 coverImage: /picforcontentfiles/ra_mcu/cover.jpg
 ---
